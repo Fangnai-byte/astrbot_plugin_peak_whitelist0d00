@@ -1,0 +1,32 @@
+# 插件的唯一标识名 (不要改)
+name: astrbot_plugin_peak_whitelist0d00
+
+# 插件展示名
+display_name: Peak Whitelist (高峰白名单)
+
+# 一句话简介
+desc: 工作日指定时段在指定群只允许白名单成员触发 bot，省 token。
+
+# 详细帮助
+help: |
+  自动生效，无需指令。在插件配置中设置目标群、白名单 QQ 与高峰时段。
+  非白名单成员在高峰时段的消息会被拦截，不触发 bot。
+
+# 版本号
+version: 1.2.0
+
+# 作者
+author: Fangnai-byte
+
+# (可选) 插件 Logo
+logo: logo.png
+
+# GitHub 仓库地址
+repo: "https://github.com/Fangnai-byte/astrbot_plugin_peak_whitelist0d00"
+
+# 支持平台
+support_platforms:
+  - aiocqhttp
+
+# 支持 AstrBot 版本
+astrbot_version: ">=3.8.0"

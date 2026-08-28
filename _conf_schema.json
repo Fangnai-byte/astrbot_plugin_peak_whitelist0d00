@@ -1,0 +1,26 @@
+{
+  "group_ids": {
+    "description": "生效的群号列表",
+    "hint": "只在这些群里生效，如 [\"123456789\"]",
+    "type": "list",
+    "default": ["123456789"]
+  },
+  "whitelist": {
+    "description": "白名单QQ号列表",
+    "hint": "高峰时段仅这些QQ号能触发bot",
+    "type": "list",
+    "default": []
+  },
+  "time_windows": {
+    "description": "生效时间段（可多个）",
+    "hint": "格式 HH:MM-HH:MM，如 [\"08:00-12:00\", \"14:00-18:00\"]",
+    "type": "list",
+    "default": ["08:00-12:00", "14:00-18:00"]
+  },
+  "weekday_only": {
+    "description": "仅工作日生效",
+    "hint": "true=仅周一至周五生效；false=每天都生效",
+    "type": "bool",
+    "default": true
+  }
+}
