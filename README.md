@@ -40,3 +40,5 @@ https://github.com/Fangnai-byte/astrbot_plugin_peak_whitelist0d00
 ## License
 
 MIT License
+
+> 最后更新：2026-08-29
