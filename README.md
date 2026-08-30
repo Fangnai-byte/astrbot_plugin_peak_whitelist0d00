@@ -1,3 +1,5 @@
+该项目由原仓库 https://github.com/Fangnai-byte/astrbot_plugin_peak_whitelist 移植而来
+
 # Peak Whitelist (高峰白名单)
 
 ![logo](logo.png)
