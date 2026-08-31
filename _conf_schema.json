@@ -11,6 +11,12 @@
     "type": "list",
     "default": []
   },
+  "blacklist": {
+    "description": "黑名单QQ号列表",
+    "hint": "这些QQ号无论何时都禁止触发bot（优先级最高，即使在白名单内也拦截）",
+    "type": "list",
+    "default": []
+  },
   "time_windows": {
     "description": "生效时间段（可多个）",
     "hint": "格式 HH:MM-HH:MM，如 [\"08:00-12:00\", \"14:00-18:00\"]",

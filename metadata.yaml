@@ -13,10 +13,10 @@ help: |
   非白名单成员在高峰时段的消息会被拦截，不触发 bot。
 
 # 版本号
-version: 1.2.0
+version: 1.3.0
 
 # 作者
-author: 綾地 寧々&Fangnai-byte
+author: Fangnai-byte
 
 # (可选) 插件 Logo
 logo: logo.png
