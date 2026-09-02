@@ -5,9 +5,21 @@
     "type": "list",
     "default": ["123456789"]
   },
+  "group_blacklist": {
+    "description": "群黑名单（群号列表）",
+    "hint": "这些群的所有消息一律拦截，不触发bot，优先级最高",
+    "type": "list",
+    "default": []
+  },
   "whitelist": {
     "description": "白名单QQ号列表",
     "hint": "高峰时段仅这些QQ号能触发bot",
+    "type": "list",
+    "default": []
+  },
+  "blacklist": {
+    "description": "黑名单QQ号列表",
+    "hint": "这些QQ号无论何时都禁止触发bot（优先级最高，即使在白名单内也拦截）",
     "type": "list",
     "default": []
   },

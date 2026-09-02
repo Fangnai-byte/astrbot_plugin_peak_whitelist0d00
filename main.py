@@ -18,7 +18,7 @@ def parse_time(s: str) -> time | None:
     "astrbot_plugin_peak_whitelist",
     "绫地宁宁",
     "高峰白名单：指定时段内仅白名单成员可触发bot（省token）",
-    "1.2.0",
+    "1.3.1",
 )
 class PeakWhitelist(Star):
     def __init__(self, context: Context, config: AstrBotConfig):
@@ -40,9 +40,19 @@ class PeakWhitelist(Star):
 
     @filter.event_message_type(EventMessageType.GROUP_MESSAGE)
     async def peak_whitelist_check(self, event: AstrMessageEvent):
+        # 群黑名单：整个群的消息一律拦截（最高优先级）
+        group_blacklist = self.config.get("group_blacklist") or []
+        if event.get_group_id() in group_blacklist:
+            event.stop_event()
+            return
         # 仅处理配置的群
         group_ids = self.config.get("group_ids") or []
         if event.get_group_id() not in group_ids:
+            return
+        # 黑名单成员一律拦截（最高优先级，无论时段、无论是否白名单/管理员）
+        blacklist = self.config.get("blacklist") or []
+        if str(event.get_sender_id()) in blacklist:
+            event.stop_event()
             return
         now = datetime.now()
         # 工作日限制
