@@ -18,7 +18,7 @@ def parse_time(s: str) -> time | None:
     "astrbot_plugin_peak_whitelist",
     "绫地宁宁",
     "高峰白名单：指定时段内仅白名单成员可触发bot（省token）",
-    "1.3.1",
+    "1.3.2",
 )
 class PeakWhitelist(Star):
     def __init__(self, context: Context, config: AstrBotConfig):
@@ -68,5 +68,8 @@ class PeakWhitelist(Star):
         # 管理员放行
         if getattr(event, "role", None) == "admin":
             return
-        # 其余成员拦截
+        # 其余成员拦截：只拦会唤醒机器人的消息（省 token 目的不变），
+        # 普通闲聊放行，避免截断 speak_rank 等其它插件的事件分发
+        if not event.is_at_or_wake_command:
+            return
         event.stop_event()
