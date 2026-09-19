@@ -20,7 +20,7 @@
 将插件目录放入 AstrBot 的 `data/plugins/` 下，或在 WebUI 插件管理 → 从 Git 仓库安装：
 
 ```
-https://github.com/Fangnai-byte/astrbot_plugin_peak_whitelist0d00
+https://github.com/NekoHome-Studio/astrbot_plugin_peak_whitelist0d00
 ```
 
 启用即可，无需指令。

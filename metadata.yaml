@@ -20,10 +20,10 @@ author: Fangnai-byte
 
 # (可选) 插件 Logo 文件名（对应插件目录下的 logo.png）
 # 使用 GitHub 绝对链接，避免 Cloud 构建时资源不同步
-logo: "https://raw.githubusercontent.com/Fangnai-byte/astrbot_plugin_peak_whitelist0d00/main/logo.png"
+logo: "https://raw.githubusercontent.com/NekoHome-Studio/astrbot_plugin_peak_whitelist0d00/main/logo.png"
 
 # GitHub 仓库地址
-repo: "https://github.com/Fangnai-byte/astrbot_plugin_peak_whitelist0d00"
+repo: "https://github.com/NekoHome-Studio/astrbot_plugin_peak_whitelist0d00"
 
 # 支持平台
 support_platforms:
